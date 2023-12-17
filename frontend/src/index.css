@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  text-align: center;
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 1px solid steelblue;
+  padding: 50px 50px;
+  border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.field{
+  display: block;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+input, select{
+  display: block;
+  height: 50px;
+  width: 100%;
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+
+::placeholder{
+  color: steelblue;
+}
+
+.btn {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.swich_link { 
+  /* fixme: move the link to the center of the page */
+  margin-top: 30px;
+  text-align: center;
+  display: block;
+  /*position: absolute;
+  left: 40%;*/
+}
+
+.error {
+  color: tomato;
+}
+
+/* .main-page-block {
+ background-color: brown;
+} */
+
+.form-table-box {
+  display: flex;
+}
+
+.plot {
+  padding: 5;
+  margin : 20px;
+  border-radius: 5px;
+  border: 1px solid steelblue;
+}
+
+table {
+  display: block; /* important */
+  height: 600px;
+  overflow-y: scroll;
+}
+
+
+
+
+
+body {
+  background-image: linear-gradient(to top, #FFF2BD, #F4D797, #EBB58A, #DA7F7D, #B5728E, #776E99);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 16px;
+}
+
+header, footer, .black-box {
+  width: 75%;
+  margin: 64px auto;
+  padding: 32px 64px;
+  border-radius: 64px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: justify;
+}
+
+header {
+  font-family: Palatino, serif;
+  font-size: 18px;
+  color: #cde;
+}
+
+.collapsible {
+  background: inherit;
+  border: 2px solid #fff;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+.centered {
+  text-align: center;
+}
+
+a {
+  color: #77bbff;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #cc77ff;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+a:hover, a:active {
+  color: #ff7777;
+}
+
+.no-highlight-link, .no-highlight-link:visited, .no-highlight-link:hover, .no-highlight-link:active {
+  color: white;
+  font-weight: bold;
+}
+
+.screen {
+  mix-blend-mode: screen;
+  border: 2px solid white;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.necessary::before {
+  font-size: larger;
+  font-weight: bold;
+  color: red;
+  content: "*";
+}
+
+input {
+  margin-bottom: 24px;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+input[type="text"], input[type="password"] {
+  padding: 4px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid white;
+  color: inherit;
+  min-width: 384px;
+}
+
+input[type="submit"], input[type="reset"], button {
+  margin: 16px 0 16px 0;
+  padding: 16px;
+  background: #003f7f;
+  border-radius: 64px;
+  font-weight: bold;
+  border: 2px solid white;
+  color: inherit;
+  text-align: center;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover, button:hover {
+  background: #cf3f0f;
+}
+
+#plot {
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  cursor: crosshair;
+}
+
+#plot:hover {
+  opacity: 0.8;
+}
+
+table {
+  margin-top: 8px;
+}
+
+table, th, td {
+  border-collapse: collapse;
+  border: 2px solid white;
+  padding: 16px;
+}
+
+#previous-results, #previous-results th, #previous-results td {
+  background: #eee;
+  border: 2px solid black;
+  color: black;
+  font-style: italic;
+}
+
+#previous-results th {
+  text-align: center;
+  background: #aaa;
+  font-style: normal;
+}
+
+#previous-results tr:nth-child(2n) td {
+  background: #ccc;
+}
+
+header + div h2::after {
+  color: #ff7;
+  content: " =)";
+  font-size: smaller;
+}
+
+header + div > ul > li {
+  color: #eee;
+  font-style: italic;
+  font-size: inherit;
+}
+
+.error {
+  font-weight: bold;
+  color: #f77;
+}
+
+#go-home {
+  background: #0000007f;
+}
+
+.based, .cringe {
+  font-weight: bold;
+}
+
+.based {
+  color: seagreen !important;
+}
+
+.cringe {
+  color: crimson !important;
+}
